@@ -65,3 +65,20 @@ description: 显示当前页面
 > 子组件还可以接收Vue组件等属性。
 
 可以看这个实际案例：[嵌套路由示例](/examples/nested-routes)
+
+## 命名视图
+
+> 与nuxt v2.4.0一起引入
+
+`<nuxt-child/>` 接收 `name` 属性以呈现命名视图:
+
+```htm
+<template>
+  <div>
+    <nuxt-child name="top" />
+    <nuxt-child />
+  </div>
+</template>
+```
+
+可以看这个实际案例：[命名视图](/examples/named-views)
